@@ -1,5 +1,40 @@
 # getting-started
 
+ASSIGNMENT 14
+USED LOOPBACK API GENERATOR
+
+BELOW ARE THE STEPS BEING FOLLOWED :-
+
+Install the CLI globally by running
+
+npm i -g @loopback/cli
+
+Create a new project using :- lb4 app
+
+Answered the prompts as follows:
+
+? Project name: getting-started ? Project description: Getting started tutorial ? Project root directory: getting-started ? Application class name: StarterApplication ? Select features to enable in the project: ❯◉ Enable eslint: add a linter with pre-configured lint rules ◉ Enable prettier: install prettier to format code conforming to rules ◉ Enable mocha: install mocha to run tests ◉ Enable loopbackBuild: use @loopback/build helpers (e.g. lb-eslint) ◉ Enable vscode: add VSCode config files ◉ Enable docker: include Dockerfile and .dockerignore ◉ Enable repositories: include repository imports and RepositoryMixin ◉ Enable services: include service-proxy imports and ServiceMixin
+
+STARTED THE PROJECT :- cd getting-started npm start
+
+In a browser, visited http://127.0.0.1:3000/ping
+
+ADDED YOUR OWN CONTROLLER:- lb4 controller
+
+Answer the prompts as follows:
+
+? Controller class name: hello ? What kind of controller would you like to generate? Empty Controller create src/controllers/hello.controller.ts update src/controllers/index.ts
+
+Controller hello was now created in src/controllers/
+
+Pasted the below code into the file /src/controllers/hello.controller.ts:
+
+import {get} from '@loopback/rest'; export class HelloController { @get('/hello') hello(): string { return 'Hello world!'; } }
+
+STARTED THE APPLICATION USING NPM START:- Visit http://127.0.0.1:3000/hello to see Hello world!
+
+This application is generated using LoopBack 4 CLI with the initial project layout.
+
 This application is generated using [LoopBack 4 CLI](https://loopback.io/doc/en/lb4/Command-line-interface.html) with the
 [initial project layout](https://loopback.io/doc/en/lb4/Loopback-application-layout.html).
 
@@ -72,4 +107,4 @@ npm test
 Please check out [LoopBack 4 documentation](https://loopback.io/doc/en/lb4/) to
 understand how you can continue to add features to this application.
 
-[![LoopBack](https://github.com/loopbackio/loopback-next/raw/master/docs/site/imgs/branding/Powered-by-LoopBack-Badge-(blue)-@2x.png)](http://loopback.io/)
+[![LoopBack](<https://github.com/loopbackio/loopback-next/raw/master/docs/site/imgs/branding/Powered-by-LoopBack-Badge-(blue)-@2x.png>)](http://loopback.io/)
